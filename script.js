@@ -18,24 +18,24 @@ function guardarCarrito() {
 const productos = [
     {
         id: 1,
-        nombre: "Zapatillas Running Pro",
-        precio: "$89.99",
-        imagen: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-        descripcion: "Zapatillas de running de alta calidad para corredores profesionales."
+        nombre: "Bolso de Tenis Wilson Clash V3 Super Tour 3PK",
+        precio: "$532.990 COP",
+        imagen: "/img/b1.png",
+        descripcion: "Descubre el compañero perfecto para los apasionados del tenis que buscan estilo y funcionalidad en un solo accesorio. "
     },
     {
         id: 2,
-        nombre: "Camiseta Deportiva",
-        precio: "$24.99",
-        imagen: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-        descripcion: "Camiseta transpirable perfecta para entrenamientos intensos."
+        nombre: "Raqueta De Tenis Wilson Ultra 100L V5",
+        precio: "$1.266.990 COP",
+        imagen: "/img/r1.jpg",
+        descripcion: "Descubre la nueva Ultra 100L V5, la raqueta que redefine el juego y se convierte en la opción ideal para los jugadores que buscan un equilibrio perfecto entre jugabilidad y potencia."
     },
     {
         id: 3,
-        nombre: "Pelota de Fútbol",
-        precio: "$19.99",
-        imagen: "https://images.unsplash.com/photo-1575361204480-aadea25e6e68?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-        descripcion: "Pelota oficial de fútbol para partidos y entrenamientos."
+        nombre: "Raqueta de Tenis Wilson Tour Slam Lite",
+        precio: "$219.000 COP",
+        imagen: "/img/r2.jpg", 
+        descripcion: "La Raqueta de Tenis Wilson Tour Slam Lite es una excelente opción diseñada para jugadores recreativos y principiantes que buscan una raqueta ligera, fácil de manejar y que ofrezca buena potencia."
     },
     {
         id: 4,
