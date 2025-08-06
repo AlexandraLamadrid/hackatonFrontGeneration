@@ -39,31 +39,31 @@ const productos = [
     },
     {
         id: 4,
-        nombre: "Mancuernas 10kg",
-        precio: "$45.99",
-        imagen: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-        descripcion: "Set de mancuernas de 10kg cada una para entrenamiento de fuerza."
+        nombre: "Raqueta de Tenis Wilson Matchpoint XL Sin CVR",
+        precio: "$319.990 COP",
+        imagen: "/img/r3.jpg",
+        descripcion: "La Wilson Matchpoint XL es una raqueta ideal para jugadores principiantes y recreativos que buscan maximizar la potencia y la facilidad de golpeo"
     },
     {
         id: 5,
-        nombre: "Raqueta de Tenis",
-        precio: "$79.99",
-        imagen: "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-        descripcion: "Raqueta de tenis profesional con tecnología avanzada."
+        nombre: "Raqueta de Tenis Wilson Hyper Hammer Legacy Mid",
+        precio: "$627.990 ",
+        imagen: "/img/r5.jpg",
+        descripcion: "La Wilson Hyper Hammer Legacy Mid es una raqueta de tenis que combina potencia explosiva y excelente maniobrabilidad, ideal para jugadores de nivel intermedio a avanzado que buscan un rendimiento equilibrado en la cancha."
     },
     {
         id: 6,
-        nombre: "Shorts Deportivos",
-        precio: "$29.99",
-        imagen: "https://images.unsplash.com/photo-1506629905607-d5266f58e7bd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-        descripcion: "Shorts cómodos y flexibles para cualquier actividad deportiva."
+        nombre: "Raqueta de Tenis Wilson Clash 100L V3.0",
+        precio: "$1.332.990 COP",
+        imagen: "/img/r6.png",
+        descripcion: "Diseñada para aquellos que buscan una experiencia de juego inigualable. Esta raqueta combina tecnología avanzada con un diseño elegante, ofreciendo comodidad y rendimiento en cada golpe."
     },
     {
         id: 7,
-        nombre: "Bicicleta Montaña",
-        precio: "$299.99",
-        imagen: "/img/img01.png",
-        descripcion: "Bicicleta de montaña resistente para aventuras off-road."
+        nombre: "Raqueta de Tenis Wilson Clash 100UL V3.0",
+        precio: "$1.277.990 COP",
+        imagen: "/img/r7.jpg",
+        descripcion: "Descubre la Raqueta de Tenis Wilson Clash 100UL V3.0, la elección perfecta para jugadores jóvenes en desarrollo y aquellos con antecedentes de lesiones en el brazo o el hombro."
     },
     {
         id: 8,
@@ -71,6 +71,14 @@ const productos = [
         precio: "$39.99",
         imagen: "https://images.unsplash.com/photo-1605639743852-71e10ed4b0ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
         descripcion: "Guantes de boxeo profesionales con excelente protección."
+    },
+    {
+        id: 20,
+        nombre: "papitas",
+        precio: "$39.99999 COP",
+        imagen: "/img/nomrbe",
+        descripcion: "Gsadasdads."
+
     }
 ];
 
@@ -338,4 +346,63 @@ document.addEventListener('DOMContentLoaded', function() {
             agregarAlCarrito(event);
         }
     });
+});
+
+let productosMostrados = 0;
+const productosPorPagina = 4;
+
+function renderizarProductosVerMas() {
+    const contenedor = document.querySelector('#productos-section .row');
+    contenedor.innerHTML = '';
+    for (let i = 0; i < productosMostrados; i++) {
+        if (productos[i]) {
+            const prod = productos[i];
+            const col = document.createElement('div');
+            col.className = 'col-lg-3 col-md-6 mb-4';
+            col.innerHTML = `
+                <div class="card h-100 shadow-sm">
+                    <img src="${prod.imagen}" class="card-img-top" alt="${prod.nombre}">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">${prod.nombre}</h5>
+                        <p class="card-text flex-grow-1">${prod.descripcion}</p>
+                        <div class="mt-auto">
+                            <p class="card-price mb-2"><strong>${prod.precio}</strong></p>
+                            <button class="btn btn-primary w-100">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+            `;
+            contenedor.appendChild(col);
+        }
+    }
+    mostrarBotonVerMas();
+}
+
+function mostrarBotonVerMas() {
+    let btn = document.getElementById('btnVerMas');
+    if (!btn) {
+        btn = document.createElement('button');
+        btn.id = 'btnVerMas';
+        btn.className = 'btn btn-secondary d-block mx-auto mt-4';
+        btn.textContent = 'Ver más';
+        btn.onclick = verMasProductos;
+        document.querySelector('#productos-section .container').appendChild(btn);
+    }
+    if (productosMostrados >= productos.length) {
+        btn.style.display = 'none';
+    } else {
+        btn.style.display = 'block';
+    }
+}
+
+function verMasProductos() {
+    productosMostrados += productosPorPagina;
+    if (productosMostrados > productos.length) productosMostrados = productos.length;
+    renderizarProductos();
+}
+
+// Inicialización
+document.addEventListener('DOMContentLoaded', () => {
+    productosMostrados = Math.min(productosPorPagina, productos.length);
+    renderizarProductosVerMas();
 });
