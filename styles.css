@@ -1,0 +1,607 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+.hckText { color: #333;}
+.hckTitle { color: #111;}
+.hckBorder {border-color: #CCC;}
+
+.hckNavbar {
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: 2;
+}
+
+.video-background {
+    position: relative;
+    height: 40vh;
+    overflow: hidden;
+}
+
+#bgVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+aside {
+    position: fixed;
+    background-color: white;
+    display: none;
+    width: 400px;
+    height: 100vh;
+    z-index: 1000;
+    right: 0;
+    top: 0;
+    border-left: 3px solid burlywood;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    padding: 0;
+}
+
+/* Estilos del carrito - NUEVO */
+.carrito-header {
+    background: burlywood;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carrito-header h4 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.btn-cerrar {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-cerrar:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+.carrito-productos {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+}
+
+.carrito-item {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #e9ecef;
+    transition: transform 0.3s ease;
+}
+
+.carrito-item:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.carrito-producto {
+    margin-bottom: 10px;
+}
+
+.carrito-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.carrito-nombre {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin: 5px 0;
+    color: #333;
+    line-height: 1.2;
+}
+
+.carrito-precio {
+    color: #D62828;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+.carrito-footer {
+    padding: 20px;
+    border-top: 1px solid #e9ecef;
+    background: #f8f9fa;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.carrito-vacio {
+    padding: 40px 20px;
+    text-align: center;
+    color: #6c757d;
+}
+
+.carrito-vacio h4 {
+    color: #343a40;
+    margin-bottom: 15px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    aside {
+        width: 100%;
+    }
+    
+    .carrito-productos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 15px;
+    }
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: blue;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container {
+    flex: 1;
+    position: relative;
+}
+
+.content-overlay {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-bottom {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+    margin-top: 0;
+    font-size: 0.9em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.hckLandpage {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+.hckPresentation {
+    background-color: gainsboro;
+}
+
+.hckPresentation h2 {
+    text-align: center;
+    margin: 0;
+}
+
+.hckStore {
+    display: flex;
+    flex-direction: row;
+    background-color: gainsboro;
+}
+
+.hckStoreSection {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 40px;
+}
+
+.hckCardStore {
+    width: 250px;
+    margin: 5px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.hckCardStore h3 {
+    font-size: 16px;
+    padding: 5px 20px 0;
+    margin: 5px 0;
+}
+.hckCardStore p {
+    font-size: 14px;
+    padding: 5px 20px 0;
+    margin: 5px 0;
+}
+.hckCardStore button {
+    margin: 0 20px;
+}
+
+.hckCarruselImg {
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.hckImage {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background: gray;
+}
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 20px 0;
+  font-family: 'Helvetica Neue', 'Segoe UI', sans-serif;
+  font-weight: 300;
+  margin-top: 40px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.footer-text,
+.footer-team,
+.footer-contact {
+  flex: 1 1 100%;
+  margin: 10px 0;
+}
+
+@media (min-width: 768px) {
+  .footer-text {
+    text-align: left;
+  }
+
+  .footer-team {
+    text-align: left;
+  }
+
+  .footer-contact {
+    text-align: right;
+  }
+
+  .footer-text,
+  .footer-team,
+  .footer-contact {
+    flex: 1;
+  }
+}
+
+.footer-team ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 5px;
+}
+
+.footer-team ul li {
+  margin-bottom: 4px;
+  text-align: left;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.footer-icons a {
+  color: #fff;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.footer-icons a:hover {
+  color: var(--rojo-principal);
+}
+
+.whatsapp-contact {
+  text-align: right;
+}
+
+.whatsapp-link {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #25D366;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.whatsapp-link:hover {
+  text-decoration: underline;
+}
+
+.footer-textarea {
+  width: 100%;
+  max-width: 250px;
+  height: 80px;
+  padding: 10px;
+  font-size: 13px;
+  border: none;
+  border-radius: 6px;
+  resize: none;
+  background-color: #1a1a1a;
+  color: #fff;
+  font-family: inherit;
+}
+
+.footer-textarea::placeholder {
+  color: #bbb;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 15px 0 20px;
+  font-size: 14px;
+  color: #ccc;
+  background-color: #000;
+  margin: 0;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+.footer-icons a {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.footer-icons a:hover {
+  color: var(--rojo-suave);
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--negro); /* usa tu variable de negro */
+  color: white;
+  border-radius: 50px;
+  padding: 10px 18px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  background-color: var(--rojo-suave); /* color de tu diseño */
+  transform: scale(1.05);
+}
+
+.whatsapp-float i {
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+.whatsapp-text {
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+
+/* Sección de Productos */
+#productos-section {
+    background-color: #f8f9fa;
+    min-height: 50vh;
+}
+
+#productos-section h2 {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15) !important;
+}
+
+.card-img-top {
+    height: 200px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+.card-title {
+    color: #333;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.card-text {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.card-price {
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Sección de Productos Favoritos - Carrusel */
+#favoritos-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+#favoritos-section h2 {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+#favoritos-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: #D62828;
+    border-radius: 2px;
+}
+
+.favorito-card {
+    border: none;
+    border-radius: 15px;
+    transition: all 0.4s ease;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.favorito-card:hover {
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15) !important;
+}
+
+.favorito-card .card-img-top {
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.favorito-card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+.favorito-card .card-title {
+    color: #333;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background: rgba(214, 40, 40, 0.8);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background: rgba(214, 40, 40, 1);
+    opacity: 1;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-control-prev {
+    left: -25px;
+}
+
+.carousel-control-next {
+    right: -25px;
+}
+
+.carousel-indicators {
+    bottom: -50px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #D62828;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+.carousel-indicators .active {
+    transform: scale(1.3);
+}
+
+/* Animación de entrada para las tarjetas */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.carousel-item.active .favorito-card {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.carousel-item.active .favorito-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.carousel-item.active .favorito-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.carousel-item.active .favorito-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+
+/* Carrito flotante / íconosﾠÍconos visibles pero discretosﾠGris oscuro + rojo en conteoﾠ#333333 + #D62828 */
