@@ -282,7 +282,7 @@ function mostrarCarrito() {
         </div>
         <div class="carrito-footer">
             <button onclick="vaciarCarrito()" class="btn btn-outline-danger btn-sm">Vaciar Carrito</button>
-            <button class="btn hckBtn btn-sm">Proceder al Pago</button>
+            <button class="btn btn-sm">Proceder al Pago</button>
         </div>
     `;
    

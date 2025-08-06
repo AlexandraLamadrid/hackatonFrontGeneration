@@ -1,7 +1,5 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 
-.hckBtn { background: #D62828;}
-.hckBtn:hover { background: rgba(214, 40, 40, 0.8);}
 .hckText { color: #333;}
 .hckTitle { color: #111;}
 .hckBorder {border-color: #CCC;}
@@ -172,7 +170,7 @@ body {
 
 .video-background {
     position: relative;
-    height: 100vh;
+    height: 40vh;
     overflow: hidden;
 }
 
@@ -344,19 +342,6 @@ footer p {
     color: #D62828;
     font-size: 1.2rem;
     font-weight: bold;
-}
-
-.hckBtn {
-    background: #D62828;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-weight: 500;
-}
-
-.hckBtn:hover {
-    background: rgba(214, 40, 40, 0.9);
-    color: white;
 }
 
 /* Sección de Productos Favoritos - Carrusel */
