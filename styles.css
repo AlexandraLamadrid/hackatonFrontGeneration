@@ -1,17 +1,5 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 
-.hckBtn { 
-    background: #D62828;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-weight: 500;
-}
-
-.hckBtn:hover { 
-    background: rgba(214, 40, 40, 0.9);
-    color: white;
-}
 .hckText { color: #333;}
 .hckTitle { color: #111;}
 .hckBorder {border-color: #CCC;}
@@ -46,7 +34,7 @@ aside {
     z-index: 1000;
     right: 0;
     top: 0;
-    border-left: 3px solid #D62828;
+    border-left: 3px solid burlywood;
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
     overflow-y: auto;
     padding: 0;
@@ -54,7 +42,7 @@ aside {
 
 /* Estilos del carrito - NUEVO */
 .carrito-header {
-    background: #D62828;
+    background: burlywood;
     color: white;
     padding: 15px 20px;
     display: flex;
@@ -104,7 +92,6 @@ aside {
 }
 
 .carrito-item:hover {
-    transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
@@ -311,7 +298,6 @@ footer p {
 }
 
 .card:hover {
-    transform: translateY(-5px);
     box-shadow: 0 8px 25px rgba(0,0,0,0.15) !important;
 }
 
@@ -338,9 +324,10 @@ footer p {
 }
 
 .card-price {
-    color: #D62828;
+    color: #000;
     font-size: 1.2rem;
     font-weight: bold;
+    text-align: center;
 }
 
 /* Sección de Productos Favoritos - Carrusel */
@@ -376,7 +363,6 @@ footer p {
 }
 
 .favorito-card:hover {
-    transform: translateY(-8px) scale(1.02);
     box-shadow: 0 15px 35px rgba(0,0,0,0.15) !important;
 }
 
