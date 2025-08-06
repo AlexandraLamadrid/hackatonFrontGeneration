@@ -363,12 +363,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Suponiendo que tienes un array llamado productos
-
 let productosMostrados = 0;
 const productosPorPagina = 4;
 
-function renderizarProductos() {
+function renderizarProductosVerMas() {
     const contenedor = document.querySelector('#productos-section .row');
     contenedor.innerHTML = '';
     for (let i = 0; i < productosMostrados; i++) {
@@ -421,5 +419,5 @@ function verMasProductos() {
 // Inicialización
 document.addEventListener('DOMContentLoaded', () => {
     productosMostrados = Math.min(productosPorPagina, productos.length);
-    renderizarProductos();
+    renderizarProductosVerMas();
 });
