@@ -339,3 +339,64 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+// Suponiendo que tienes un array llamado productos
+
+let productosMostrados = 0;
+const productosPorPagina = 4;
+
+function renderizarProductos() {
+    const contenedor = document.querySelector('#productos-section .row');
+    contenedor.innerHTML = '';
+    for (let i = 0; i < productosMostrados; i++) {
+        if (productos[i]) {
+            const prod = productos[i];
+            const col = document.createElement('div');
+            col.className = 'col-lg-3 col-md-6 mb-4';
+            col.innerHTML = `
+                <div class="card h-100 shadow-sm">
+                    <img src="${prod.imagen}" class="card-img-top" alt="${prod.nombre}">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">${prod.nombre}</h5>
+                        <p class="card-text flex-grow-1">${prod.descripcion}</p>
+                        <div class="mt-auto">
+                            <p class="card-price mb-2"><strong>${prod.precio}</strong></p>
+                            <button class="btn btn-primary w-100">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+            `;
+            contenedor.appendChild(col);
+        }
+    }
+    mostrarBotonVerMas();
+}
+
+function mostrarBotonVerMas() {
+    let btn = document.getElementById('btnVerMas');
+    if (!btn) {
+        btn = document.createElement('button');
+        btn.id = 'btnVerMas';
+        btn.className = 'btn btn-secondary d-block mx-auto mt-4';
+        btn.textContent = 'Ver más';
+        btn.onclick = verMasProductos;
+        document.querySelector('#productos-section .container').appendChild(btn);
+    }
+    if (productosMostrados >= productos.length) {
+        btn.style.display = 'none';
+    } else {
+        btn.style.display = 'block';
+    }
+}
+
+function verMasProductos() {
+    productosMostrados += productosPorPagina;
+    if (productosMostrados > productos.length) productosMostrados = productos.length;
+    renderizarProductos();
+}
+
+// Inicialización
+document.addEventListener('DOMContentLoaded', () => {
+    productosMostrados = Math.min(productosPorPagina, productos.length);
+    renderizarProductos();
+});
