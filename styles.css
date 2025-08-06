@@ -184,5 +184,130 @@ footer p {
     color: white;
 }
 
+/* Sección de Productos Favoritos - Carrusel */
+#favoritos-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+#favoritos-section h2 {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+#favoritos-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: #D62828;
+    border-radius: 2px;
+}
+
+.favorito-card {
+    border: none;
+    border-radius: 15px;
+    transition: all 0.4s ease;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.favorito-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15) !important;
+}
+
+.favorito-card .card-img-top {
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.favorito-card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+.favorito-card .card-title {
+    color: #333;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background: rgba(214, 40, 40, 0.8);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background: rgba(214, 40, 40, 1);
+    opacity: 1;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-control-prev {
+    left: -25px;
+}
+
+.carousel-control-next {
+    right: -25px;
+}
+
+.carousel-indicators {
+    bottom: -50px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #D62828;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+.carousel-indicators .active {
+    transform: scale(1.3);
+}
+
+/* Animación de entrada para las tarjetas */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.carousel-item.active .favorito-card {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.carousel-item.active .favorito-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.carousel-item.active .favorito-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.carousel-item.active .favorito-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
 
 /* Carrito flotante / íconosﾠÍconos visibles pero discretosﾠGris oscuro + rojo en conteoﾠ#333333 + #D62828 */
