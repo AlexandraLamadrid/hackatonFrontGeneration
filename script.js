@@ -73,13 +73,64 @@ const productos = [
         descripcion: "Guantes de boxeo profesionales con excelente protección."
     },
     {
-        id: 20,
-        nombre: "papitas",
-        precio: "$39.99999 COP",
-        imagen: "/img/nomrbe",
-        descripcion: "Gsadasdads."
+        id: 50,
+        nombre: "Bolso de Tenis Wilson Clash V3 Super Tour 3PK",
+        precio: "$532.990 COP",
+        imagen: "/img/b1.png",
+        descripcion: "Bolso de Tenis Wilson Advantage 3PK, ideal para transportar tus raquetas y accesorios con estilo y comodidad."
 
-    }
+    },
+    {
+        id: 51,
+        nombre: "Bolso de Tenis Wilson Advantage 3PK",
+        precio: "$210.990 COP",
+        imagen: "/img/b2.png",
+        descripcion: "Bolso de Tenis Wilson Team 3PK, diseñado para jugadores que buscan un bolso espacioso y funcional para llevar sus raquetas y accesorios de tenis."
+    },
+    ,
+{
+        id: 52,
+        nombre: "Bolso de Tenis Wilson Team 3PK",
+        precio: "$388.990 COP",
+        imagen: "/img/b3.png",
+        descripcion: "Bolso de Tenis Wilson Clash V3 Super Tour 3PK, combina estilo y funcionalidad para los apasionados del tenis que buscan un accesorio versátil y elegante."
+    },
+    {
+        id: 53,
+        nombre: "Bolso de Tenis Wilson Roland Garros Paris Team 3PK",
+        precio: "$443.990 COP",
+        imagen: "/img/b4.png",
+        descripcion: "bolso de Tenis Wilson Roland Garros Paris Team 3PK, inspirado en el prestigioso torneo de tenis, combina estilo y funcionalidad para los amantes del deporte."
+    },
+    {
+        id: 54,
+        nombre: "Bolso de Tenis Wilson Super Tour 6PK",
+        precio: "$388.990 COP",
+        imagen: "/img/b5.png",
+        descripcion: "Bolso de Tenis Wilson Super Tour 6PK, diseñado para jugadores que buscan un bolso espacioso y funcional para llevar sus raquetas y accesorios de tenis."
+    },
+    {
+        id: 55,
+        nombre: "Cuerda para Raqueta Wilson Luxilon Eco Spin 125",
+        precio: "$1.106.990 COP",
+        imagen: "/img/c1.png",
+        descripcion: "Bolso de Tenis Wilson Team 3PK, diseñado para jugadores que buscan un bolso espacioso y funcional para llevar sus raquetas y accesorios de tenis."
+    },
+    {
+        id: 56,
+        nombre: "Cuerda para Raqueta Wilson Luxilon Eco Rough 125",
+        precio: "$1.106.990 COP",
+        imagen: "/img/c2.png",
+        descripcion: "Bolso de Tenis Wilson Team 3PK, diseñado para jugadores que buscan un bolso espacioso y funcional para llevar sus raquetas y accesorios de tenis."
+    },
+    {
+        id: 57,
+        nombre: "Cuerda para Raqueta Wilson Luxilon Eco Power 125",
+        precio: "$1.106.990 COP",
+        imagen: "/img/c3.png",
+        descripcion: "Bolso de Tenis Wilson Team 3PK, diseñado para jugadores que buscan un bolso espacioso y funcional para llevar sus raquetas y accesorios de tenis."
+    },
+
 ];
 
 
