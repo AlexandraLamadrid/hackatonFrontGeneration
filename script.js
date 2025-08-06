@@ -62,7 +62,7 @@ const productos = [
         id: 7,
         nombre: "Bicicleta Montaña",
         precio: "$299.99",
-        imagen: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+        imagen: "/img/img01.png",
         descripcion: "Bicicleta de montaña resistente para aventuras off-road."
     },
     {
@@ -133,7 +133,7 @@ function crearTemplateProducto(producto) {
                     <p class="card-text flex-grow-1">${producto.descripcion}</p>
                     <div class="mt-auto">
                         <p class="card-price mb-2"><strong>${producto.precio}</strong></p>
-                        <button class="btn hckBtn w-100">Agregar al Carrito</button>
+                        <button class="btn hckBtn btn-outline-secondary w-100">Agregar al Carrito</button>
                     </div>
                 </div>
             </div>
@@ -153,7 +153,7 @@ function crearTemplateFavorito(producto) {
                     <p class="card-text flex-grow-1">${producto.descripcion}</p>
                     <div class="mt-auto">
                         <p class="card-price mb-2"><strong>${producto.precio}</strong></p>
-                        <button class="btn hckBtn w-100">Agregar al Carrito</button>
+                        <button class="btn hckBtn btn-outline-secondary w-100">Agregar al Carrito</button>
                     </div>
                 </div>
             </div>
@@ -247,15 +247,6 @@ function agregarAlCarrito(event) {
    
     // Mostrar productos en el carrito
     mostrarCarrito();
-   
-    // Feedback visual (opcional)
-    event.target.textContent = '¡Agregado!';
-    event.target.style.backgroundColor = '#28a745';
-   
-    setTimeout(() => {
-        event.target.textContent = 'Agregar al Carrito';
-        event.target.style.backgroundColor = '#D62828';
-    }, 1500);
 }
 
 
