@@ -50,6 +50,27 @@ const productos = [
         precio: "$79.99",
         imagen: "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
         descripcion: "Raqueta de tenis profesional con tecnología avanzada."
+    },
+    {
+        id: 6,
+        nombre: "Shorts Deportivos",
+        precio: "$29.99",
+        imagen: "https://images.unsplash.com/photo-1506629905607-d5266f58e7bd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+        descripcion: "Shorts cómodos y flexibles para cualquier actividad deportiva."
+    },
+    {
+        id: 7,
+        nombre: "Bicicleta Montaña",
+        precio: "$299.99",
+        imagen: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+        descripcion: "Bicicleta de montaña resistente para aventuras off-road."
+    },
+    {
+        id: 8,
+        nombre: "Guantes de Boxeo",
+        precio: "$39.99",
+        imagen: "https://images.unsplash.com/photo-1605639743852-71e10ed4b0ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+        descripcion: "Guantes de boxeo profesionales con excelente protección."
     }
 ];
 
@@ -327,6 +348,3 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
-
-
-
