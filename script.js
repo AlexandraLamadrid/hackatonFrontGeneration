@@ -144,47 +144,48 @@ const productos = [
 // Productos favoritos para el carrusel
 const productosFavoritos = [
     {
-        id: 9,
-        nombre: "Zapatillas Basketball Elite",
-        precio: "$129.99",
-        imagen: "https://images.unsplash.com/photo-1552346154-21d32810aba3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-        descripcion: "Zapatillas de basketball de edición limitada."
+        id: 80,
+        nombre: "Bolso de Tenis Wilson Clash V3 Super Tour 6PK",
+        precio: "$636.990 COP",
+        imagen: "/img/a1.jpg",
+        descripcion: "Descubre al compañero perfecto para los apasionados del tenis que buscan estilo y funcionalidad."
     },
     {
-        id: 10,
-        nombre: "Set Yoga Completo",
-        precio: "$69.99",
-        imagen: "https://images.unsplash.com/photo-1506977905167-b871281c8656?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-        descripcion: "Kit completo de yoga con mat, blocks y correas."
+        id: 81,
+        nombre: "Bolso de Tenis Wilson Blade V9 Super Tour 9PK",
+        precio: "$799.990 COP",
+        imagen: "/img/a2.jpg",
+        descripcion: "Descubre la combinación perfecta de estilo y funcionalidad con este bolso."
     },
     {
-        id: 11,
-        nombre: "Reloj Deportivo Smart",
-        precio: "$199.99",
-        imagen: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-        descripcion: "Reloj inteligente con GPS y monitor de frecuencia cardíaca."
+        id: 82,
+        nombre: "Bolso de Tenis Wilson Shift Super Tour 9PK",
+        precio: "$799.990 COP",
+        imagen: "/img/a3.jpg",
+        descripcion: "Diseñado especialmente para el tenista de alto nivel que busca rendimiento y estilo en cada partido."
     },
     {
-        id: 12,
-        nombre: "Tabla de Surf Pro",
-        precio: "$449.99",
-        imagen: "https://images.unsplash.com/photo-1502680390469-be75c86b636f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-        descripcion: "Tabla de surf profesional para expertos."
+        id: 83,
+        nombre: "Morral de Tenis Wilson Roland Garros Paris Team 2PK",
+        precio: "$345.990 COP",
+        imagen: "/img/a4.jpg",
+        descripcion: "Descubre la combinación perfecta de elegancia y funcionalidad para los amantes del tenis."
     },
     {
-        id: 13,
-        nombre: "Proteína Whey Premium",
-        precio: "$59.99",
-        imagen: "https://images.unsplash.com/photo-1593095948071-474c5cc2989d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-        descripcion: "Proteína en polvo de alta calidad para recuperación muscular."
+        id: 84,
+        nombre: "Morral de Tenis Wilson Team 2PK",
+        precio: "$389.990 COP",
+        imagen: "/img/a5.jpg",
+        descripcion: "Descubre la comodidad y funcionalidad de este morral, diseñado especialmente para los apasionados del tenis."
     },
     {
-        id: 14,
-        nombre: "Banda Elástica Set",
-        precio: "$24.99",
-        imagen: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-        descripcion: "Set de bandas elásticas de diferentes resistencias."
-    }
+        id: 85,
+        nombre: "Morral de Tenis Wilson Shift V1 Super Tour 2PK",
+        precio: "$533.990 COP",
+        imagen: "/img/a6.jpg",
+        descripcion: "Descubre la mochila perfecta para los amantes del tenis que buscan estilo y funcionalidad."
+    },
+ 
 ];
 
 
