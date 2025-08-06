@@ -73,37 +73,36 @@ body {
     background-color: gainsboro;
 }
 
-.hckFilters {
-    width: 200px;
-    min-height: 100px;
-    background: gray;
-    margin-right: 20px;
-}
-
 .hckStoreSection {
     flex: 1;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
+    padding: 40px;
 }
 
 .hckCardStore {
-    width: 200px;
+    width: 250px;
     margin: 5px;
-    padding: 20px;
     background-color: white;
-    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 20px;
 }
 
 .hckCardStore h3 {
     font-size: 16px;
-    padding: 0;
+    padding: 5px 20px 0;
     margin: 5px 0;
 }
 .hckCardStore p {
-    font-size: 16px;
-    padding: 0;
+    font-size: 14px;
+    padding: 5px 20px 0;
     margin: 5px 0;
+}
+.hckCardStore button {
+    margin: 0 20px;
 }
 
 .hckCarruselImg {
