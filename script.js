@@ -21,65 +21,123 @@ const productos = [
         nombre: "Bolso de Tenis Wilson Clash V3 Super Tour 3PK",
         precio: "$532.990 COP",
         imagen: "/img/b1.png",
-        descripcion: "Descubre el compañero perfecto para los apasionados del tenis que buscan estilo y funcionalidad en un solo accesorio. "
+        descripcion: "Bolso deportivo con estilo y funcionalidad para tenistas apasionados."
     },
     {
         id: 2,
         nombre: "Raqueta De Tenis Wilson Ultra 100L V5",
         precio: "$1.266.990 COP",
         imagen: "/img/r1.jpg",
-        descripcion: "Descubre la nueva Ultra 100L V5, la raqueta que redefine el juego y se convierte en la opción ideal para los jugadores que buscan un equilibrio perfecto entre jugabilidad y potencia."
+        descripcion: "Raqueta que redefine el juego con equilibrio perfecto entre jugabilidad y potencia."
     },
     {
         id: 3,
         nombre: "Raqueta de Tenis Wilson Tour Slam Lite",
         precio: "$219.000 COP",
         imagen: "/img/r2.jpg", 
-        descripcion: "La Raqueta de Tenis Wilson Tour Slam Lite es una excelente opción diseñada para jugadores recreativos y principiantes que buscan una raqueta ligera, fácil de manejar y que ofrezca buena potencia."
+        descripcion: "Raqueta ligera y fácil de manejar, ideal para principiantes y recreativos."
     },
     {
         id: 4,
         nombre: "Raqueta de Tenis Wilson Matchpoint XL Sin CVR",
         precio: "$319.990 COP",
         imagen: "/img/r3.jpg",
-        descripcion: "La Wilson Matchpoint XL es una raqueta ideal para jugadores principiantes y recreativos que buscan maximizar la potencia y la facilidad de golpeo"
+        descripcion: "Raqueta ideal para principiantes que buscan maximizar potencia y facilidad de golpeo."
     },
     {
         id: 5,
         nombre: "Raqueta de Tenis Wilson Hyper Hammer Legacy Mid",
         precio: "$627.990 ",
         imagen: "/img/r5.jpg",
-        descripcion: "La Wilson Hyper Hammer Legacy Mid es una raqueta de tenis que combina potencia explosiva y excelente maniobrabilidad, ideal para jugadores de nivel intermedio a avanzado que buscan un rendimiento equilibrado en la cancha."
+        descripcion: "Combina potencia explosiva y maniobrabilidad para jugadores intermedio-avanzado."
     },
     {
         id: 6,
         nombre: "Raqueta de Tenis Wilson Clash 100L V3.0",
         precio: "$1.332.990 COP",
         imagen: "/img/r6.png",
-        descripcion: "Diseñada para aquellos que buscan una experiencia de juego inigualable. Esta raqueta combina tecnología avanzada con un diseño elegante, ofreciendo comodidad y rendimiento en cada golpe."
+        descripcion: "Experiencia de juego inigualable con tecnología avanzada y diseño elegante."
     },
     {
         id: 7,
         nombre: "Raqueta de Tenis Wilson Clash 100UL V3.0",
         precio: "$1.277.990 COP",
         imagen: "/img/r7.jpg",
-        descripcion: "Descubre la Raqueta de Tenis Wilson Clash 100UL V3.0, la elección perfecta para jugadores jóvenes en desarrollo y aquellos con antecedentes de lesiones en el brazo o el hombro."
+        descripcion: "Perfect para jugadores jóvenes y aquellos con antecedentes de lesiones."
     },
     {
         id: 8,
-        nombre: "Guantes de Boxeo",
-        precio: "$39.99",
-        imagen: "https://images.unsplash.com/photo-1605639743852-71e10ed4b0ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-        descripcion: "Guantes de boxeo profesionales con excelente protección."
+        nombre: "Raqueta de Tenis Wilson Impact",
+        precio: "$206.990 COP",
+        imagen: "/img/r8.jpg",
+        descripcion: "Consistencia y profundidad en cada golpe con sistema SX Bridge innovador."
     },
     {
-        id: 20,
-        nombre: "papitas",
-        precio: "$39.99999 COP",
-        imagen: "/img/nomrbe",
-        descripcion: "Gsadasdads."
+        id: 9,
+        nombre: "Raqueta de Tenis Wilson Shift 99L V1",
+        precio: "$1.569.990 COP",
+        imagen: "/img/r9.jpg",
+        descripcion: "Combinación perfecta de efectos y potencia para jugadores intermedio-avanzado."
+    },
+    {
+        id: 50,
+        nombre: "Bolso de Tenis Wilson Clash V3 Super Tour 3PK",
+        precio: "$532.990 COP",
+        imagen: "/img/b1.png",
+        descripcion: "Bolso de Tenis Wilson Advantage 3PK, ideal para transportar tus raquetas y accesorios con estilo y comodidad."
 
-    }
+    },
+    {
+        id: 51,
+        nombre: "Bolso de Tenis Wilson Advantage 3PK",
+        precio: "$210.990 COP",
+        imagen: "/img/b2.png",
+        descripcion: "Bolso de Tenis Wilson Team 3PK, diseñado para jugadores que buscan un bolso espacioso y funcional para llevar sus raquetas y accesorios de tenis."
+    },
+    ,
+{
+        id: 52,
+        nombre: "Bolso de Tenis Wilson Team 3PK",
+        precio: "$388.990 COP",
+        imagen: "/img/b3.png",
+        descripcion: "Bolso de Tenis Wilson Clash V3 Super Tour 3PK, combina estilo y funcionalidad para los apasionados del tenis que buscan un accesorio versátil y elegante."
+    },
+    {
+        id: 53,
+        nombre: "Bolso de Tenis Wilson Roland Garros Paris Team 3PK",
+        precio: "$443.990 COP",
+        imagen: "/img/b4.png",
+        descripcion: "bolso de Tenis Wilson Roland Garros Paris Team 3PK, inspirado en el prestigioso torneo de tenis, combina estilo y funcionalidad para los amantes del deporte."
+    },
+    {
+        id: 54,
+        nombre: "Bolso de Tenis Wilson Super Tour 6PK",
+        precio: "$388.990 COP",
+        imagen: "/img/b5.png",
+        descripcion: "Bolso de Tenis Wilson Super Tour 6PK, diseñado para jugadores que buscan un bolso espacioso y funcional para llevar sus raquetas y accesorios de tenis."
+    },
+    {
+        id: 55,
+        nombre: "Cuerda para Raqueta Wilson Luxilon Eco Spin 125",
+        precio: "$1.106.990 COP",
+        imagen: "/img/c1.png",
+        descripcion: "Bolso de Tenis Wilson Team 3PK, diseñado para jugadores que buscan un bolso espacioso y funcional para llevar sus raquetas y accesorios de tenis."
+    },
+    {
+        id: 56,
+        nombre: "Cuerda para Raqueta Wilson Luxilon Eco Rough 125",
+        precio: "$1.106.990 COP",
+        imagen: "/img/c2.png",
+        descripcion: "Bolso de Tenis Wilson Team 3PK, diseñado para jugadores que buscan un bolso espacioso y funcional para llevar sus raquetas y accesorios de tenis."
+    },
+    {
+        id: 57,
+        nombre: "Cuerda para Raqueta Wilson Luxilon Eco Power 125",
+        precio: "$1.106.990 COP",
+        imagen: "/img/c3.png",
+        descripcion: "Bolso de Tenis Wilson Team 3PK, diseñado para jugadores que buscan un bolso espacioso y funcional para llevar sus raquetas y accesorios de tenis."
+    },
+
 ];
 
 
