@@ -39,31 +39,31 @@ const productos = [
     },
     {
         id: 4,
-        nombre: "Mancuernas 10kg",
-        precio: "$45.99",
-        imagen: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-        descripcion: "Set de mancuernas de 10kg cada una para entrenamiento de fuerza."
+        nombre: "Raqueta de Tenis Wilson Matchpoint XL Sin CVR",
+        precio: "$319.990 COP",
+        imagen: "/img/r3.jpg",
+        descripcion: "La Wilson Matchpoint XL es una raqueta ideal para jugadores principiantes y recreativos que buscan maximizar la potencia y la facilidad de golpeo"
     },
     {
         id: 5,
-        nombre: "Raqueta de Tenis",
-        precio: "$79.99",
-        imagen: "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-        descripcion: "Raqueta de tenis profesional con tecnología avanzada."
+        nombre: "Raqueta de Tenis Wilson Hyper Hammer Legacy Mid",
+        precio: "$627.990 ",
+        imagen: "/img/r5.jpg",
+        descripcion: "La Wilson Hyper Hammer Legacy Mid es una raqueta de tenis que combina potencia explosiva y excelente maniobrabilidad, ideal para jugadores de nivel intermedio a avanzado que buscan un rendimiento equilibrado en la cancha."
     },
     {
         id: 6,
-        nombre: "Shorts Deportivos",
-        precio: "$29.99",
-        imagen: "https://images.unsplash.com/photo-1506629905607-d5266f58e7bd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-        descripcion: "Shorts cómodos y flexibles para cualquier actividad deportiva."
+        nombre: "Raqueta de Tenis Wilson Clash 100L V3.0",
+        precio: "$1.332.990 COP",
+        imagen: "/img/r6.png",
+        descripcion: "Diseñada para aquellos que buscan una experiencia de juego inigualable. Esta raqueta combina tecnología avanzada con un diseño elegante, ofreciendo comodidad y rendimiento en cada golpe."
     },
     {
         id: 7,
-        nombre: "Bicicleta Montaña",
-        precio: "$299.99",
-        imagen: "/img/img01.png",
-        descripcion: "Bicicleta de montaña resistente para aventuras off-road."
+        nombre: "Raqueta de Tenis Wilson Clash 100UL V3.0",
+        precio: "$1.277.990 COP",
+        imagen: "/img/r7.jpg",
+        descripcion: "Descubre la Raqueta de Tenis Wilson Clash 100UL V3.0, la elección perfecta para jugadores jóvenes en desarrollo y aquellos con antecedentes de lesiones en el brazo o el hombro."
     },
     {
         id: 8,
@@ -71,6 +71,14 @@ const productos = [
         precio: "$39.99",
         imagen: "https://images.unsplash.com/photo-1605639743852-71e10ed4b0ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
         descripcion: "Guantes de boxeo profesionales con excelente protección."
+    },
+    {
+        id: 20,
+        nombre: "papitas",
+        precio: "$39.99999 COP",
+        imagen: "/img/nomrbe",
+        descripcion: "Gsadasdads."
+
     }
 ];
 
