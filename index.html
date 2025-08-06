@@ -7,33 +7,170 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Athletic Station - Tienda Deportiva</title>
 </head>
 <body>
+    <!-- Contenedor principal con video de fondo -->
+    <main class="main-container">
+        <!-- Sección de Video de Fondo -->
+        <section id="hero-section" class="video-background">
+            <video autoplay muted loop id="bgVideo">
+                <source src="HCKVIDEO.mp4" type="video/mp4">
+                Tu navegador no soporta video HTML5.
+            </video>
+            
+            <!-- Navegación superpuesta sobre el video -->
+            <nav class="navbar navbar-expand-lg hckNavbar fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-light mx-4" href="#">
+                        <i class="bi bi-dribbble me-2"></i>Athletic Station
+                    </a>
+                </div>
 
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <button onclick="hckCarrito()" type="button" class="btn btn btn-light btn-sm mx-4">
+                                <i class="bi bi-bag-check-fill"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
 
-    <section class="hckPrincipalSection">
-    <video autoplay muted loop id="bgVideo">
-    <source src="HCKVIDEO.mp4" type="video/mp4">
-    Tu navegador no soporta video HTML5.
-    </video>
-    <nav class="navbar navbar-expand-lg hckNavbar fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand text-light mx-4" href="#">Navbar</a>
-        </div>
-
-
-
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-        <li class="nav-item dropdown">
-            <button onclick="hckCarrito()" type="button" class="btn btn btn-light btn-sm mx-4"><i class="bi bi-bag-check-fill"></i></button>
-        </li>
-        </ul>
-        </div>
-    </nav>
-
+            <!-- Contenido superpuesto sobre el video -->
+            <div class="content-overlay">
                 <aside id="hckAside">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quibusdam quidem quaerat ullam esse molestias hic iure eligendi! Molestias, esse.</p>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <!-- Sección de Productos -->
+    <section id="productos-section" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Nuestros Productos</h2>
+            <div class="row">
+                <!-- Producto 1 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://via.placeholder.com/300x200?text=Zapatillas+Running" class="card-img-top" alt="Zapatillas Running">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Zapatillas Running Pro</h5>
+                            <p class="card-text flex-grow-1">Zapatillas de alta performance para corredores profesionales. Tecnología de amortiguación avanzada.</p>
+                            <div class="mt-auto">
+                                <p class="card-price mb-2"><strong>$120.000</strong></p>
+                                <button class="btn hckBtn w-100">Agregar al Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://via.placeholder.com/300x200?text=Camiseta+Deportiva" class="card-img-top" alt="Camiseta Deportiva">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Camiseta Deportiva</h5>
+                            <p class="card-text flex-grow-1">Camiseta transpirable de alta calidad, perfecta para entrenamientos intensos y competencias.</p>
+                            <div class="mt-auto">
+                                <p class="card-price mb-2"><strong>$45.000</strong></p>
+                                <button class="btn hckBtn w-100">Agregar al Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://via.placeholder.com/300x200?text=Shorts+Tennis" class="card-img-top" alt="Shorts Tennis">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Shorts de Tenis</h5>
+                            <p class="card-text flex-grow-1">Shorts cómodos y flexibles, diseñados específicamente para jugadores de tenis profesionales.</p>
+                            <div class="mt-auto">
+                                <p class="card-price mb-2"><strong>$65.000</strong></p>
+                                <button class="btn hckBtn w-100">Agregar al Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://via.placeholder.com/300x200?text=Raqueta+Tennis" class="card-img-top" alt="Raqueta Tennis">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Raqueta Profesional</h5>
+                            <p class="card-text flex-grow-1">Raqueta de tenis de fibra de carbono, perfecta para jugadores intermedios y avanzados.</p>
+                            <div class="mt-auto">
+                                <p class="card-price mb-2"><strong>$280.000</strong></p>
+                                <button class="btn hckBtn w-100">Agregar al Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 5 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://via.placeholder.com/300x200?text=Medias+Deportivas" class="card-img-top" alt="Medias Deportivas">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Medias Deportivas</h5>
+                            <p class="card-text flex-grow-1">Pack de 3 medias deportivas con tecnología anti-humedad y soporte en el arco.</p>
+                            <div class="mt-auto">
+                                <p class="card-price mb-2"><strong>$25.000</strong></p>
+                                <button class="btn hckBtn w-100">Agregar al Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 6 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://via.placeholder.com/300x200?text=Sudadera+Training" class="card-img-top" alt="Sudadera Training">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Sudadera Training</h5>
+                            <p class="card-text flex-grow-1">Sudadera con capucha, ideal para calentamiento y entrenamientos en clima frío.</p>
+                            <div class="mt-auto">
+                                <p class="card-price mb-2"><strong>$85.000</strong></p>
+                                <button class="btn hckBtn w-100">Agregar al Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 7 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://via.placeholder.com/300x200?text=Gorra+Deportiva" class="card-img-top" alt="Gorra Deportiva">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Gorra Deportiva</h5>
+                            <p class="card-text flex-grow-1">Gorra ajustable con protección UV, perfecta para entrenamientos al aire libre.</p>
+                            <div class="mt-auto">
+                                <p class="card-price mb-2"><strong>$35.000</strong></p>
+                                <button class="btn hckBtn w-100">Agregar al Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 8 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://via.placeholder.com/300x200?text=Botella+Agua" class="card-img-top" alt="Botella de Agua">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Botella de Agua</h5>
+                            <p class="card-text flex-grow-1">Botella deportiva de acero inoxidable, mantiene la temperatura por 12 horas.</p>
+                            <div class="mt-auto">
+                                <p class="card-price mb-2"><strong>$40.000</strong></p>
+                                <button class="btn hckBtn w-100">Agregar al Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quibusdam quidem quaerat ullam esse molestias hic iure eligendi! Molestias, esse.</p>
     </aside>
 
@@ -58,6 +195,166 @@
             <p><span class="hckPrice">$1.000</span></p>
             <button class="btn btn-dark btn-sm">Agregar al carrito</button>
         </div>
+    </section>
+
+    <!-- Sección de Carrusel de Productos Favoritos -->
+    <section id="favoritos-section" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Productos Favoritos</h2>
+            <div id="favoritosCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card favorito-card h-100 shadow-sm">
+                                    <img src="https://via.placeholder.com/350x250?text=Zapatillas+Premium" class="card-img-top" alt="Zapatillas Premium">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">⭐ Zapatillas Premium</h5>
+                                        <p class="card-text flex-grow-1">Las zapatillas más vendidas de la temporada con tecnología de punta.</p>
+                                        <div class="mt-auto">
+                                            <p class="card-price mb-2"><strong>$180.000</strong></p>
+                                            <button class="btn hckBtn w-100">Ver Producto</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card favorito-card h-100 shadow-sm">
+                                    <img src="https://via.placeholder.com/350x250?text=Kit+Completo" class="card-img-top" alt="Kit Completo">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">⭐ Kit Deportivo Completo</h5>
+                                        <p class="card-text flex-grow-1">Set completo para entrenamientos: camiseta, shorts y medias.</p>
+                                        <div class="mt-auto">
+                                            <p class="card-price mb-2"><strong>$95.000</strong></p>
+                                            <button class="btn hckBtn w-100">Ver Producto</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card favorito-card h-100 shadow-sm">
+                                    <img src="https://via.placeholder.com/350x250?text=Raqueta+Pro" class="card-img-top" alt="Raqueta Pro">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">⭐ Raqueta Pro Elite</h5>
+                                        <p class="card-text flex-grow-1">Raqueta profesional usada por campeones mundiales.</p>
+                                        <div class="mt-auto">
+                                            <p class="card-price mb-2"><strong>$350.000</strong></p>
+                                            <button class="btn hckBtn w-100">Ver Producto</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card favorito-card h-100 shadow-sm">
+                                    <img src="https://via.placeholder.com/350x250?text=Sudadera+Elite" class="card-img-top" alt="Sudadera Elite">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">⭐ Sudadera Elite</h5>
+                                        <p class="card-text flex-grow-1">Sudadera de edición limitada con diseño exclusivo para atletas.</p>
+                                        <div class="mt-auto">
+                                            <p class="card-price mb-2"><strong>$120.000</strong></p>
+                                            <button class="btn hckBtn w-100">Ver Producto</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card favorito-card h-100 shadow-sm">
+                                    <img src="https://via.placeholder.com/350x250?text=Accesorios+Pro" class="card-img-top" alt="Accesorios Pro">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">⭐ Pack Accesorios Pro</h5>
+                                        <p class="card-text flex-grow-1">Conjunto de accesorios esenciales: gorra, muñequeras y toalla.</p>
+                                        <div class="mt-auto">
+                                            <p class="card-price mb-2"><strong>$55.000</strong></p>
+                                            <button class="btn hckBtn w-100">Ver Producto</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card favorito-card h-100 shadow-sm">
+                                    <img src="https://via.placeholder.com/350x250?text=Bolso+Deportivo" class="card-img-top" alt="Bolso Deportivo">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">⭐ Bolso Deportivo Premium</h5>
+                                        <p class="card-text flex-grow-1">Bolso resistente al agua con compartimentos especializados.</p>
+                                        <div class="mt-auto">
+                                            <p class="card-price mb-2"><strong>$75.000</strong></p>
+                                            <button class="btn hckBtn w-100">Ver Producto</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card favorito-card h-100 shadow-sm">
+                                    <img src="https://via.placeholder.com/350x250?text=Smartwatch+Sport" class="card-img-top" alt="Smartwatch Sport">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">⭐ Smartwatch Deportivo</h5>
+                                        <p class="card-text flex-grow-1">Reloj inteligente con GPS y monitor cardíaco avanzado.</p>
+                                        <div class="mt-auto">
+                                            <p class="card-price mb-2"><strong>$450.000</strong></p>
+                                            <button class="btn hckBtn w-100">Ver Producto</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card favorito-card h-100 shadow-sm">
+                                    <img src="https://via.placeholder.com/350x250?text=Proteinas+Sport" class="card-img-top" alt="Proteinas Sport">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">⭐ Suplemento Proteico</h5>
+                                        <p class="card-text flex-grow-1">Proteína en polvo de alta calidad para recuperación muscular.</p>
+                                        <div class="mt-auto">
+                                            <p class="card-price mb-2"><strong>$85.000</strong></p>
+                                            <button class="btn hckBtn w-100">Ver Producto</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card favorito-card h-100 shadow-sm">
+                                    <img src="https://via.placeholder.com/350x250?text=Banda+Elastica" class="card-img-top" alt="Banda Elastica">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">⭐ Set Bandas Elásticas</h5>
+                                        <p class="card-text flex-grow-1">Kit de bandas de resistencia para entrenamientos en casa.</p>
+                                        <div class="mt-auto">
+                                            <p class="card-price mb-2"><strong>$30.000</strong></p>
+                                            <button class="btn hckBtn w-100">Ver Producto</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controles del carrusel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#favoritosCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#favoritosCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+
+                <!-- Indicadores -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#favoritosCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#favoritosCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#favoritosCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
         <div class="hckCardStore">
             <div class="hckCarruselImg">
             <img src="#" alt="#" class="hckImage">
@@ -96,12 +393,13 @@
         </div>
     </section>
 
-</div>
-
-    <footer>
-  <p>&copy; 2025 Tienda de Ropa de Tenis. Todos los derechos reservados.</p>
-  <p>Creado con ❤️ para el hackathon.</p>
-</footer>
+    <!-- Footer separado en la parte inferior -->
+    <footer id="footer-section" class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2025 Athletic Station. Todos los derechos reservados.</p>
+            <p>Creado con ❤️ para el hackathon.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
