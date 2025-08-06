@@ -1,6 +1,6 @@
 # 🎾 Tienda de Ropa de Tenis - Landing Page Interactiva
 
-Bienvenido/a a nuestra primera hackathon: esta landing page muestra los productos principales de una tienda especializada en **ropa deportiva de tenis**, permitiendo al usuario interactuar con un carrito de compras que persiste usando LocalStorage.
+Bienvenido/a a tu primer hackathon: esta landing page muestra los productos principales de una tienda especializada en **ropa deportiva de tenis**, permitiendo al usuario interactuar con un carrito de compras que persiste usando LocalStorage.
 
 ---
 
@@ -28,6 +28,19 @@ La landing utiliza los siguientes colores definidos en el archivo `styles.css`:
   --borde: #CCCCCC;
   --blanco: #FFFFFF;
 }
+```
+
+---
+
+## 📂 Estructura del Proyecto
+
+```
+.
+├── index.html        # Página principal de la tienda
+├── styles.css        # Estilos con la paleta de colores
+├── script.js         # Lógica de productos, carrito y LocalStorage
+└── README.md         # Este archivo de documentación
+```
 
 ---
 
